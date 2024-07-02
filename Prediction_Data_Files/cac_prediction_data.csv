@@ -1,0 +1,64 @@
+sales_country,n_products,store_id_0,store_id_1,store_id_2,store_id_3,store_id_4,store_id_5,store_id_6,store_id_7,store_id_8,store_id_9,store_id_10,store_id_11,store_id_12,store_id_13,store_id_14,store_id_15,store_id_16,store_id_17,store_id_18,store_id_19,promotion_name,Daily Paper,Radio,In-Store Coupon,Product Attachment,Sunday Paper,TV,Street Handout,Bulk Mail,Cash Register Handout
+Canada,260,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,Price Cutters,0,0,0,0,0,0,0,0,1
+USA,13,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,Big Promo,0,0,0,0,0,0,0,0,1
+Mexico,146,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,Best Savings,0,0,0,0,0,0,0,0,1
+USA,186,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,Weekend Markdown,0,0,0,0,0,0,1,0,0
+Mexico,47,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,Super Duper Savers,0,0,0,0,0,1,0,0,0
+USA,141,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,Go For It,0,0,0,1,0,0,0,0,0
+USA,362,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,Sales Galore,0,0,0,1,0,0,0,0,0
+USA,184,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,Bag Stuffers,0,0,0,1,0,0,0,0,0
+USA,127,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,Coupon Spectacular,0,0,0,0,0,1,0,0,0
+Mexico,315,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,Price Savers,0,0,0,0,0,1,0,0,0
+USA,140,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,Dollar Cutters,0,0,0,0,0,0,1,0,0
+USA,166,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,Big Time Discounts,0,0,0,1,0,0,0,0,0
+USA,29,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,Two Day Sale,1,1,0,0,0,1,0,0,0
+USA,185,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,Super Savers,0,1,0,0,1,0,0,0,0
+USA,164,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,Sale Winners,0,0,0,1,0,0,0,0,0
+USA,138,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,High Roller Savings,0,1,0,0,1,1,0,0,0
+USA,148,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,Double Down Sale,0,0,0,0,0,0,1,0,0
+USA,134,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,Go For It,1,1,0,0,0,1,0,0,0
+USA,158,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,Big Promo,0,1,0,0,0,0,0,0,0
+USA,469,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,I Cant Believe It Sale,0,0,0,1,0,0,0,0,0
+USA,219,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,Double Down Sale,0,1,0,0,0,0,0,0,0
+Canada,209,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,Super Duper Savers,1,1,0,0,0,0,0,0,0
+USA,243,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,Super Savers,0,1,0,0,1,0,0,0,0
+USA,122,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,Price Destroyers,1,1,0,0,0,1,0,0,0
+Mexico,11,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,Super Wallet Savers,0,1,0,0,1,1,0,0,0
+Mexico,141,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,Save-It Sale,0,0,1,0,0,0,0,0,0
+USA,57,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,Dimes Off,0,0,1,0,0,0,0,0,0
+USA,24,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,Unbeatable Price Savers,1,0,0,0,0,0,0,0,0
+Mexico,137,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,Shelf Clearing Days,0,0,0,0,0,1,0,0,0
+USA,303,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,Cash Register Lottery,1,1,0,0,0,1,0,0,0
+USA,153,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,Double Your Savings,0,1,0,0,0,0,0,0,0
+USA,202,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,Price Savers,0,0,0,1,0,0,0,0,0
+Mexico,34,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,Sale Winners,0,0,0,0,0,0,0,1,0
+USA,259,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,Money Savers,0,0,0,0,0,0,0,0,1
+USA,148,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,Tip Top Savings,0,0,0,0,0,0,0,1,0
+USA,182,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,Free For All,0,0,0,1,0,0,0,0,0
+Mexico,220,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,Pick Your Savings,0,1,0,0,1,1,0,0,0
+USA,213,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,High Roller Savings,1,1,0,0,0,0,0,0,0
+USA,352,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,One Day Sale,1,1,0,0,0,1,0,0,0
+USA,122,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,Tip Top Savings,1,1,0,0,0,1,0,0,0
+USA,141,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,High Roller Savings,0,0,0,0,0,1,0,0,0
+USA,63,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,Coupon Spectacular,1,0,0,0,0,0,0,0,0
+USA,387,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,Weekend Markdown,1,0,0,0,0,0,0,0,0
+USA,31,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,Price Winners,1,1,0,0,0,0,0,0,0
+USA,117,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,Price Slashers,0,1,0,0,1,1,0,0,0
+USA,119,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,Price Winners,1,1,0,0,0,0,0,0,0
+USA,219,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,Save-It Sale,0,0,0,0,1,0,0,0,0
+USA,25,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,Big Time Savings,1,1,0,0,0,1,0,0,0
+USA,209,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,Dollar Cutters,0,1,0,0,1,0,0,0,0
+Mexico,208,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,Sales Days,1,1,0,0,0,1,0,0,0
+Mexico,142,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,Go For It,0,0,0,1,0,0,0,0,0
+Mexico,51,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,Dollar Cutters,1,1,0,0,0,0,0,0,0
+USA,177,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,Free For All,0,1,0,0,0,0,0,0,0
+Mexico,45,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,Price Destroyers,0,0,0,0,0,0,0,1,0
+Mexico,73,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,Price Destroyers,0,1,0,0,1,0,0,0,0
+USA,142,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,Green Light Days,1,0,0,0,0,0,0,0,0
+USA,34,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,Fantastic Discounts,0,1,0,0,1,1,0,0,0
+Mexico,160,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,Super Savers,0,0,0,0,0,1,0,0,0
+Mexico,140,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,Wallet Savers,0,0,0,0,0,1,0,0,0
+USA,140,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,Fantastic Discounts,0,1,0,0,0,0,0,0,0
+Mexico,176,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,Price Winners,0,0,0,0,1,0,0,0,0
+USA,146,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,Go For It,0,1,0,0,0,0,0,0,0
+USA,20,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,Price Winners,0,0,0,0,0,0,0,0,1
