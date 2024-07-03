@@ -26,8 +26,6 @@ def trainRouteClient():
         else:
             return Response("Invalid input format", status=400)
         
-        train_valObj = train_validation(path)
-        train_valObj.train_validation()
         trainModelObj = trainModel()
         trainModelObj.trainingModel()
         return Response("Training successful")
