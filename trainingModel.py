@@ -3,6 +3,7 @@ from application_logging import logger
 from data_ingestion import data_loader
 from data_preprocessing import preprocessing
 from best_model_finder import tuner 
+from file_operations import file_methods
 
 class trainModel:
     
@@ -10,48 +11,41 @@ class trainModel:
         self.log_writer=logger.App_Logger()
         self.file_object=open("Training_Logs/ModelTrainingLog.txt",'a+')
     
-    class trainModel:
-    
-        def __init__(self):
-            self.log_writer=logger.App_Logger()
-            self.file_object=open("Training_Logs/ModelTrainingLog.txt",'a+')
-    
-        def trainingModel(self):
-            self.log_writer.log(self.file_object,'Start of training')
-            try:
-                data_getter=data_loader.Data_Getter(self.file_object,self.log_writer)
-                data=data_getter.get_data_train()
-                preprocessor=preprocessing.Preprocessor(self.file_object,self.log_writer)
-                onehot_encode_cols=['promotion_name','sales_country']
-                data=preprocessor.encode_data(data,onehot_encode_cols)
-                X,Y=preprocessor.separate_label_feature(data,label_column_name='booking status')
-                is_null_present=preprocessor.is_null_present(X)
+    def trainingModel(self):
+        self.log_writer.log(self.file_object,'Start of training')
+        try:
+            data_getter=data_loader.Data_Getter(self.file_object,self.log_writer)
+            data=data_getter.get_data_train()
+            preprocessor=preprocessing.Preprocessor(self.file_object,self.log_writer)
+            onehot_encode_cols=['promotion_name','sales_country']
+            data=preprocessor.encode_data(data,onehot_encode_cols)
+            X,Y=preprocessor.separate_label_feature(data,label_column_name='target')
+            is_null_present=preprocessor.is_null_present(X)
 
-                if(is_null_present):
-                    X=preprocessor.impute_missing_values(X)
+            if(is_null_present):
+                X=preprocessor.impute_missing_values(X)
     
-                cols_to_drop=preprocessor.get_columns_with_zero_std_deviation(X)
+            cols_to_drop=preprocessor.get_columns_with_zero_std_deviation(X)
             
 
-                X=preprocessor.remove_columns(X,cols_to_drop)
+            X=preprocessor.remove_columns(X,cols_to_drop)
 
-                """Model Training starts here"""
+            """Model Training starts here"""
 
-                x_train,x_test,y_train,y_test=train_test_split(X,Y,test_size=1/3,random_state=143)
+            x_train,x_test,y_train,y_test=train_test_split(X,Y,test_size=1/3,random_state=143)
 
-                model_finder=tuner.Model_Finder(self.file_object,self.log_writer)
+            model_finder=tuner.Model_Finder(self.file_object,self.log_writer)
 
-                best_model_name,best_model=model_finder.get_best_model(x_train,y_train,x_test,y_test)
+            best_model_name,best_model=model_finder.get_best_model(x_train,y_train,x_test,y_test)
 
-                file_op=file_methods.File_Operation(self.file_object,self.log_writer)
+            file_op=file_methods.File_Operation(self.file_object,self.log_writer)
 
-                save_model=file_op.save_model(best_model,best_model_name)
+            save_model=file_op.save_model(best_model,best_model_name)
 
-                self.log_writer.log(self.file_object,'Successful End of Training')
-                self.file_object.close()
-
-
-            except Exception as e:
-                self.log_writer.log(self.file_object,'Unsuccessful End of Training')
-                self.file_object.close()
-                raise e
+            self.log_writer.log(self.file_object,'Successful End of Training')
+            self.file_object.close()
+        
+        except Exception as e:
+            self.log_writer.log(self.file_object,'Unsuccessful End of Training')
+            self.file_object.close()
+            raise e

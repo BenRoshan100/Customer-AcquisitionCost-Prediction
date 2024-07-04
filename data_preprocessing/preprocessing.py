@@ -85,6 +85,18 @@ class Preprocessor:
             self.logger_object.log(self.file_object,f'Exception occurred in impute_missing_values method of Preprocessor class. Exception message: {str(e)}')
             raise e
         
+    def separate_label_feature(self,data,label_column_name):
+        self.logger_object.log(self.file_object,'Entered the separate_label_feature method of Preprocessor class')
+        try:
+            self.X=data.drop(labels=label_column_name,axis=1)
+            self.Y=data[label_column_name]
+            self.logger_object.log(self.file_object,'Label Separation successful. Exited the separate_label_feature method of Preprocessor class')
+            return self.X,self.Y
+        except Exception as e:
+            self.logger_object.log(self.file_object,'Exception occured during separate_label_feature method of Preprocessor class. Exception message: '+str(e))
+            self.logger_object.log(self.file_object,'Label Separation failed. Exited the separate_label_feature method of Preprocessor')
+            raise Exception()
+        
     def get_columns_with_zero_std_deviation(self,data):
         self.logger_object.log(self.file_object,"Entered the get_columns)with_zero_std_deviation method of Preprocessor class")
         numerical_cols=data.select_dtypes(include=[np.number]).columns
