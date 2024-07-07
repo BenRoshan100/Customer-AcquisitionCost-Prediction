@@ -7,7 +7,11 @@ class File_Operation:
         self.file_object = file_object
         self.logger_object = logger_object 
         self.model_directory = 'models/'
-
+    
+    def deletePredictionFile(self):
+        if os.path.exists('Prediction_Output_File/Predictions.csv'):
+            os.remove('Prediction_Output_File/Predictions.csv')
+    
     def save_model(self,model,filename):
         self.logger_object.log(self.file_object,'Entered the save_model method of the File_Operation class')
         try:

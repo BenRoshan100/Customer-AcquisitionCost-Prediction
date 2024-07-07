@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAC Prediction by Ben Roshan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('/static/supermarket.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #333;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        select,
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>CAC Prediction by Ben Roshan</h1>
+        <form action="/" method="post">
+            <!-- Sales Country -->
+            <label for="sales_country">Sales Country:</label>
+            <select id="sales_country" name="sales_country">
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="Mexico">Mexico</option>
+            </select>
+            <br><br>
+
+            <!-- Number of Products -->
+            <label for="n_products">Number of Products:</label>
+            <input type="number" id="n_products" name="n_products">
+            <br><br>
+
+            <!-- Promotion Name -->
+            <label for="promotion_name">Promotion Name:</label>
+            <select id="promotion_name" name="promotion_name">
+                <option value="Bag Stuffers">Bag Stuffers</option>
+                <option value="Cash Register Lottery">Cash Register Lottery</option>
+                <option value="High Roller Savings">High Roller Savings</option>
+                <option value="Double Down Sale">Double Down Sale</option>
+                <option value="Green Light Days">Green Light Days</option>
+                <option value="Big Time Savings">Big Time Savings</option>
+                <option value="Price Savers">Price Savers</option>
+                <option value="Price Slashers">Price Slashers</option>
+                <option value="Dollar Days">Dollar Days</option>
+                <option value="Two Day Sale">Two Day Sale</option>
+                <option value="Super Duper Savers">Super Duper Savers</option>
+                <option value="Weekend Markdown">Weekend Markdown</option>
+                <option value="Dollar Cutters">Dollar Cutters</option>
+                <option value="Sales Galore">Sales Galore</option>
+                <option value="Big Promo">Big Promo</option>
+                <option value="Free For All">Free For All</option>
+                <option value="Savings Galore">Savings Galore</option>
+                <option value="Unbeatable Price Savers">Unbeatable Price Savers</option>
+                <option value="Price Smashers">Price Smashers</option>
+                <option value="Shelf Clearing Days">Shelf Clearing Days</option>
+                <option value="Sales Days">Sales Days</option>
+                <option value="Go For It">Go For It</option>
+                <option value="Super Savers">Super Savers</option>
+                <option value="Wallet Savers">Wallet Savers</option>
+                <option value="Save-It Sale">Save-It Sale</option>
+                <option value="Price Destroyers">Price Destroyers</option>
+                <option value="Two for One">Two for One</option>
+                <option value="Big Time Discounts">Big Time Discounts</option>
+                <option value="One Day Sale">One Day Sale</option>
+                <option value="Fantastic Discounts">Fantastic Discounts</option>
+                <option value="Shelf Emptiers">Shelf Emptiers</option>
+                <option value="Saving Days">Saving Days</option>
+                <option value="You Save Days">You Save Days</option>
+                <option value="Sale Winners">Sale Winners</option>
+                <option value="Coupon Spectacular">Coupon Spectacular</option>
+                <option value="Three for One">Three for One</option>
+                <option value="Price Winners">Price Winners</option>
+                <option value="Dimes Off">Dimes Off</option>
+                <option value="I Cant Believe It Sale">I Cant Believe It Sale</option>
+                <option value="Money Savers">Money Savers</option>
+                <option value="Bye Bye Baby">Bye Bye Baby</option>
+                <option value="Green Light Special">Green Light Special</option>
+                <option value="Price Cutters">Price Cutters</option>
+                <option value="Tip Top Savings">Tip Top Savings</option>
+                <option value="Best Savings">Best Savings</option>
+                <option value="Pick Your Savings">Pick Your Savings</option>
+                <option value="Double Your Savings">Double Your Savings</option>
+                <option value="Mystery Sale">Mystery Sale</option>
+                <option value="Super Wallet Savers">Super Wallet Savers</option>
+            </select>
+            <br><br>
+
+            <!-- Store IDs (boolean) -->
+            <label>Store IDs:</label><br>
+            <input type="checkbox" id="store_id_0" name="store_id_0" value="1">
+            <label for="store_id_0">Store ID 0</label><br>
+            <input type="checkbox" id="store_id_1" name="store_id_1" value="1">
+            <label for="store_id_1">Store ID 1</label><br>
+            <input type="checkbox" id="store_id_2" name="store_id_2" value="1">
+            <label for="store_id_2">Store ID 2</label><br>
+            <input type="checkbox" id="store_id_3" name="store_id_3" value="1">
+            <label for="store_id_3">Store ID 3</label><br>
+            <input type="checkbox" id="store_id_4" name="store_id_4" value="1">
+            <label for="store_id_4">Store ID 4</label><br>
+            <input type="checkbox" id="store_id_5" name="store_id_5" value="1">
+            <label for="store_id_5">Store ID 5</label><br>
+            <input type="checkbox" id="store_id_6" name="store_id_6" value="1">
+            <label for="store_id_6">Store ID 6</label><br>
+            <input type="checkbox" id="store_id_7" name="store_id_7" value="1">
+            <label for="store_id_7">Store ID 7</label><br>
+            <input type="checkbox" id="store_id_8" name="store_id_8" value="1">
+            <label for="store_id_8">Store ID 8</label><br>
+            <input type="checkbox" id="store_id_9" name="store_id_9" value="1">
+            <label for="store_id_9">Store ID 9</label><br>
+            <input type="checkbox" id="store_id_10" name="store_id_10" value="1">
+            <label for="store_id_10">Store ID 10</label><br>
+            <input type="checkbox" id="store_id_11" name="store_id_11" value="1">
+            <label for="store_id_11">Store ID 11</label><br>
+            <input type="checkbox" id="store_id_12" name="store_id_12" value="1">
+            <label for="store_id_12">Store ID 12</label><br>
+            <input type="checkbox" id="store_id_13" name="store_id_13" value="1">
+            <label for="store_id_13">Store ID 13</label><br>
+            <input type="checkbox" id="store_id_14" name="store_id_14" value="1">
+            <label for="store_id_14">Store ID 14</label><br>
+            <input type="checkbox" id="store_id_15" name="store_id_15" value="1">
+            <label for="store_id_15">Store ID 15</label><br>
+            <input type="checkbox" id="store_id_16" name="store_id_16" value="1">
+            <label for="store_id_16">Store ID 16</label><br>
+            <input type="checkbox" id="store_id_17" name="store_id_17" value="1">
+            <label for="store_id_17">Store ID 17</label><br>
+            <input type="checkbox" id="store_id_18" name="store_id_18" value="1">
+            <label for="store_id_18">Store ID 18</label><br>
+            <input type="checkbox" id="store_id_19" name="store_id_19" value="1">
+            <label for="store_id_19">Store ID 19</label>
+            <br><br>
+
+            <!-- Promotion Methods (0 or 1) -->
+            <label>Promotion Methods:</label><br>
+            <input type="checkbox" id="Daily_Paper" name="Daily_Paper" value="1">
+            <label for="Daily_Paper">Daily Paper</label><br>
+            <input type="checkbox" id="Radio" name="Radio" value="1">
+            <label for="Radio">Radio</label><br>
+            <input type="checkbox" id="In_Store_Coupon" name="In_Store_Coupon" value="1">
+            <label for="In_Store_Coupon">In-Store Coupon</label><br>
+            <input type="checkbox" id="Product_Attachment" name="Product_Attachment" value="1">
+            <label for="Product_Attachment">Product Attachment</label><br>
+            <input type="checkbox" id="Sunday_Paper" name="Sunday_Paper" value="1">
+            <label for="Sunday_Paper">Sunday Paper</label><br>
+            <input type="checkbox" id="TV" name="TV" value="1">
+            <label for="TV">TV</label><br>
+            <input type="checkbox" id="Street_Handout" name="Street_Handout" value="1">
+            <label for="Street_Handout">Street Handout</label><br>
+            <input type="checkbox" id="Bulk_Mail" name="Bulk_Mail" value="1">
+            <label for="Bulk_Mail">Bulk Mail</label><br>
+            <input type="checkbox" id="Cash_Register_Handout" name="Cash_Register_Handout" value="1">
+            <label for="Cash_Register_Handout">Cash Register Handout</label><br>
+            <br>
+
+            <!-- Submit Button -->
+            <button type="submit">Predict</button>
+        </form>
+    </div>
+</body>
+
+</html>

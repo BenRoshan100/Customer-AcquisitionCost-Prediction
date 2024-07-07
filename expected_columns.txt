@@ -1,0 +1,80 @@
+n_products
+store_id_0
+store_id_1
+store_id_2
+store_id_3
+store_id_4
+store_id_5
+store_id_6
+store_id_7
+store_id_8
+store_id_9
+store_id_10
+store_id_11
+store_id_12
+store_id_13
+store_id_14
+store_id_15
+store_id_16
+store_id_17
+store_id_18
+store_id_19
+Daily Paper
+Radio
+In-Store Coupon
+Product Attachment
+Sunday Paper
+TV
+Street Handout
+Bulk Mail
+Cash Register Handout
+promotion_name_Best Savings
+promotion_name_Big Promo
+promotion_name_Big Time Discounts
+promotion_name_Big Time Savings
+promotion_name_Bye Bye Baby
+promotion_name_Cash Register Lottery
+promotion_name_Coupon Spectacular
+promotion_name_Dimes Off
+promotion_name_Dollar Cutters
+promotion_name_Dollar Days
+promotion_name_Double Down Sale
+promotion_name_Double Your Savings
+promotion_name_Fantastic Discounts
+promotion_name_Free For All
+promotion_name_Go For It
+promotion_name_Green Light Days
+promotion_name_Green Light Special
+promotion_name_High Roller Savings
+promotion_name_I Cant Believe It Sale
+promotion_name_Money Savers
+promotion_name_Mystery Sale
+promotion_name_One Day Sale
+promotion_name_Pick Your Savings
+promotion_name_Price Cutters
+promotion_name_Price Destroyers
+promotion_name_Price Savers
+promotion_name_Price Slashers
+promotion_name_Price Smashers
+promotion_name_Price Winners
+promotion_name_Sale Winners
+promotion_name_Sales Days
+promotion_name_Sales Galore
+promotion_name_Save-It Sale
+promotion_name_Saving Days
+promotion_name_Savings Galore
+promotion_name_Shelf Clearing Days
+promotion_name_Shelf Emptiers
+promotion_name_Super Duper Savers
+promotion_name_Super Savers
+promotion_name_Super Wallet Savers
+promotion_name_Three for One
+promotion_name_Tip Top Savings
+promotion_name_Two Day Sale
+promotion_name_Two for One
+promotion_name_Unbeatable Price Savers
+promotion_name_Wallet Savers
+promotion_name_Weekend Markdown
+promotion_name_You Save Days
+sales_country_Mexico
+sales_country_USA

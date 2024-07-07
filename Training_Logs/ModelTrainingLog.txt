@@ -98,3 +98,90 @@ sklearn.utils._param_validation.InvalidParameterError: The 'criterion' parameter
 2024-07-04/21:59:12		Entered the save_model method of the File_Operation class
 2024-07-04/21:59:12		Model FileXGBoost saved. Exited the save_model method of the Model_Finder class
 2024-07-04/21:59:12		Successful End of Training
+2024-07-07/17:41:18		Start of training
+2024-07-07/17:41:18		Entered the get_data method of Data_Getter class
+2024-07-07/17:41:18		Data Load successful. Exited the get_data method of Data_Getter class
+2024-07-07/17:41:18		Entered the encode_data method of Preprocessor class
+2024-07-07/17:41:18		Object features are successfully encoded
+2024-07-07/17:41:18		Entered the separate_label_feature method of Preprocessor class
+2024-07-07/17:41:18		Label Separation successful. Exited the separate_label_feature method of Preprocessor class
+2024-07-07/17:41:18		Entered is_null_present method of Preprocessor class
+2024-07-07/17:41:18		Finding missing calues is a success. Data written to the null values file. Exited the is_null_present method of Preprocessor class
+2024-07-07/17:41:18		Entered the get_columns)with_zero_std_deviation method of Preprocessor class
+2024-07-07/17:41:18		Column search for Standard Deviation of Zero Successful. Exited the get_columns_with_zero_std_deviation method of Preprocessor class
+2024-07-07/17:41:18		Entered the remove_coluns method of Preprocessor class
+2024-07-07/17:41:18		Column removal successful. Exited the remove_coluns method of Preprocessor class
+2024-07-07/17:41:18		Entered the get_best_model method of the Model_Finder class
+2024-07-07/17:41:18		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2024-07-07/17:41:39		XGBoost best params: {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 200}. Exited the get_best_params_for_xgboost method of the Model_Finder class
+2024-07-07/17:41:39		MSE for XGBoost: 12.24361638795359
+2024-07-07/17:41:39		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2024-07-07/17:41:48		Random Forest best params: {'criterion': 'squared_error', 'max_depth': 3, 'max_features': 'sqrt', 'n_estimators': 130}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2024-07-07/17:41:48		MSE for RF: 6481.03803962822
+2024-07-07/17:41:48		Got the best Model as XGBoost: 12.24361638795359
+2024-07-07/17:41:48		Entered the save_model method of the File_Operation class
+2024-07-07/17:41:48		Model FileXGBoost saved. Exited the save_model method of the Model_Finder class
+2024-07-07/17:41:48		Successful End of Training
+2024-07-07/17:55:41		Start of training
+2024-07-07/17:55:41		Entered the get_data method of Data_Getter class
+2024-07-07/17:55:41		Data Load successful. Exited the get_data method of Data_Getter class
+2024-07-07/17:55:41		Entered the encode_data method of Preprocessor class
+2024-07-07/17:55:41		Object features are successfully encoded
+2024-07-07/17:55:41		Entered the separate_label_feature method of Preprocessor class
+2024-07-07/17:55:41		Exception occured during separate_label_feature method of Preprocessor class. Exception message: 'tuple' object has no attribute 'drop'
+2024-07-07/17:55:41		Label Separation failed. Exited the separate_label_feature method of Preprocessor
+2024-07-07/17:55:41		Unsuccessful End of Training
+2024-07-07/18:00:54		Start of training
+2024-07-07/18:00:54		Entered the get_data method of Data_Getter class
+2024-07-07/18:00:54		Data Load successful. Exited the get_data method of Data_Getter class
+2024-07-07/18:00:54		Entered the encode_data method of Preprocessor class
+2024-07-07/18:00:54		Object features are successfully encoded
+2024-07-07/18:00:54		Entered the separate_label_feature method of Preprocessor class
+2024-07-07/18:00:54		Label Separation successful. Exited the separate_label_feature method of Preprocessor class
+2024-07-07/18:00:54		Entered is_null_present method of Preprocessor class
+2024-07-07/18:00:54		Finding missing calues is a success. Data written to the null values file. Exited the is_null_present method of Preprocessor class
+2024-07-07/18:00:54		Entered the get_columns)with_zero_std_deviation method of Preprocessor class
+2024-07-07/18:00:54		Column search for Standard Deviation of Zero Successful. Exited the get_columns_with_zero_std_deviation method of Preprocessor class
+2024-07-07/18:00:54		Entered the remove_coluns method of Preprocessor class
+2024-07-07/18:00:54		Column removal successful. Exited the remove_coluns method of Preprocessor class
+2024-07-07/18:00:54		Entered the get_best_model method of the Model_Finder class
+2024-07-07/18:00:54		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2024-07-07/18:01:15		XGBoost best params: {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 200}. Exited the get_best_params_for_xgboost method of the Model_Finder class
+2024-07-07/18:01:15		MSE for XGBoost: 12.24361638795359
+2024-07-07/18:01:15		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2024-07-07/18:01:24		Random Forest best params: {'criterion': 'squared_error', 'max_depth': 3, 'max_features': 'sqrt', 'n_estimators': 50}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2024-07-07/18:01:24		MSE for RF: 6871.258042287787
+2024-07-07/18:01:24		Got the best Model as XGBoost: 12.24361638795359
+2024-07-07/18:01:24		Entered the save_model method of the File_Operation class
+2024-07-07/18:01:24		Model FileXGBoost saved. Exited the save_model method of the Model_Finder class
+2024-07-07/18:01:24		Successful End of Training
+2024-07-07/18:07:51		Start of training
+2024-07-07/18:07:51		Entered the get_data method of Data_Getter class
+2024-07-07/18:07:51		Data Load successful. Exited the get_data method of Data_Getter class
+2024-07-07/18:07:51		Entered the encode_data method of Preprocessor class
+2024-07-07/18:07:51		Exception occurred in encode_data method of Preprocessor class. Exception message: 'Index' object has no attribute 'remove'
+2024-07-07/18:07:51		Unsuccessful End of Training
+2024-07-07/18:08:48		Start of training
+2024-07-07/18:08:48		Entered the get_data method of Data_Getter class
+2024-07-07/18:08:48		Data Load successful. Exited the get_data method of Data_Getter class
+2024-07-07/18:08:48		Entered the encode_data method of Preprocessor class
+2024-07-07/18:08:48		Object features are successfully encoded
+2024-07-07/18:08:48		Entered the separate_label_feature method of Preprocessor class
+2024-07-07/18:08:48		Label Separation successful. Exited the separate_label_feature method of Preprocessor class
+2024-07-07/18:08:48		Entered is_null_present method of Preprocessor class
+2024-07-07/18:08:48		Finding missing calues is a success. Data written to the null values file. Exited the is_null_present method of Preprocessor class
+2024-07-07/18:08:48		Entered the get_columns)with_zero_std_deviation method of Preprocessor class
+2024-07-07/18:08:48		Column search for Standard Deviation of Zero Successful. Exited the get_columns_with_zero_std_deviation method of Preprocessor class
+2024-07-07/18:08:48		Entered the remove_coluns method of Preprocessor class
+2024-07-07/18:08:48		Column removal successful. Exited the remove_coluns method of Preprocessor class
+2024-07-07/18:08:48		Entered the get_best_model method of the Model_Finder class
+2024-07-07/18:08:48		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2024-07-07/18:09:09		XGBoost best params: {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 200}. Exited the get_best_params_for_xgboost method of the Model_Finder class
+2024-07-07/18:09:09		MSE for XGBoost: 12.24361638795359
+2024-07-07/18:09:09		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2024-07-07/18:09:18		Random Forest best params: {'criterion': 'squared_error', 'max_depth': 3, 'max_features': 'sqrt', 'n_estimators': 130}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2024-07-07/18:09:18		MSE for RF: 6210.249290973325
+2024-07-07/18:09:18		Got the best Model as XGBoost: 12.24361638795359
+2024-07-07/18:09:18		Entered the save_model method of the File_Operation class
+2024-07-07/18:09:18		Model FileXGBoost saved. Exited the save_model method of the Model_Finder class
+2024-07-07/18:09:18		Successful End of Training

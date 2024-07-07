@@ -15,11 +15,33 @@ class Preprocessor:
         self.data=data
         try:
             data=pd.get_dummies(data,columns=onehot_encode_cols,drop_first=True)
+            expected_columns = data.columns.tolist()
+            expected_columns.remove('target')
+            with open('expected_columns.txt', 'w') as f:
+                for column in expected_columns:
+                    f.write(f"{column}\n")
             self.logger_object.log(self.file_object,'Object features are successfully encoded')
             return data
         
         except Exception as e:
             self.logger_object.log(self.file_object,f'Exception occurred in encode_data method of Preprocessor class. Exception message: {str(e)}')
+            raise e
+        
+    def encode_data_prediction(self,data,onehot_encode_cols):
+        self.logger_object.log(self.file_object,'Entered the encode_data_prediction method of Preprocessor class')
+        self.data=data
+        try:
+            with open('expected_columns.txt', 'r') as f:
+                expected_columns = f.read().splitlines()
+            data=pd.get_dummies(data,columns=onehot_encode_cols,drop_first=True)
+            for column in expected_columns:
+                if column not in data.columns:
+                    data[column] = 0
+            data=data[expected_columns]
+            self.logger_object.log(self.file_object,'Object features are successfully encoded for prediction pipeline')
+            return data
+        except Exception as e:
+            self.logger_object.log(self.file_object,f'Exception occurred in encode_data_prediction method of Preprocessor class. Exception message: {str(e)}')
             raise e
         
     def remove_columns(self,data,columns):
