@@ -148,3 +148,47 @@ training data did not have the following fields: target
 2024-07-07/18:10:45		Entered the load_model method of the File_Operation class
 2024-07-07/18:10:45		Model FileXGBoostloaded. Exited the load_model method of Model_Finder class
 2024-07-07/18:10:45		End of Prediction
+2024-07-08/22:43:43		Start of Prediction
+2024-07-08/22:43:43		Error occurred while running prediction. Error:: local variable 'data' referenced before assignment
+2024-07-08/22:43:49		Start of Prediction
+2024-07-08/22:43:49		Error occurred while running prediction. Error:: local variable 'data' referenced before assignment
+2024-07-08/22:46:20		Start of Prediction
+2024-07-08/22:46:20		Entered the encode_data_prediction method of Preprocessor class
+2024-07-08/22:46:20		Object features are successfully encoded for prediction pipeline
+2024-07-08/22:46:20		Entered is_null_present method of Preprocessor class
+2024-07-08/22:46:20		Finding missing calues is a success. Data written to the null values file. Exited the is_null_present method of Preprocessor class
+2024-07-08/22:46:20		Entered the find_correct_model_file method of the Model_Finder class.
+2024-07-08/22:46:20		Exited the find_correct_model_file method of Model Finder class.
+2024-07-08/22:46:20		Entered the load_model method of the File_Operation class
+2024-07-08/22:46:20		Model FileXGBoostloaded. Exited the load_model method of Model_Finder class
+2024-07-08/22:46:20		End of Prediction
+2024-07-08/22:51:17		Start of Prediction
+2024-07-08/22:51:17		Entered the encode_data_prediction method of Preprocessor class
+2024-07-08/22:51:17		Object features are successfully encoded for prediction pipeline
+2024-07-08/22:51:17		Entered is_null_present method of Preprocessor class
+2024-07-08/22:51:17		Finding missing calues is a success. Data written to the null values file. Exited the is_null_present method of Preprocessor class
+2024-07-08/22:51:17		Entered the find_correct_model_file method of the Model_Finder class.
+2024-07-08/22:51:17		Exited the find_correct_model_file method of Model Finder class.
+2024-07-08/22:51:17		Entered the load_model method of the File_Operation class
+2024-07-08/22:51:17		Model FileXGBoostloaded. Exited the load_model method of Model_Finder class
+2024-07-08/22:51:17		End of Prediction
+2024-07-08/22:52:43		Start of Prediction
+2024-07-08/22:52:43		Entered the encode_data_prediction method of Preprocessor class
+2024-07-08/22:52:43		Object features are successfully encoded for prediction pipeline
+2024-07-08/22:52:43		Entered is_null_present method of Preprocessor class
+2024-07-08/22:52:43		Finding missing calues is a success. Data written to the null values file. Exited the is_null_present method of Preprocessor class
+2024-07-08/22:52:43		Entered the find_correct_model_file method of the Model_Finder class.
+2024-07-08/22:52:43		Exited the find_correct_model_file method of Model Finder class.
+2024-07-08/22:52:43		Entered the load_model method of the File_Operation class
+2024-07-08/22:52:43		Model FileXGBoostloaded. Exited the load_model method of Model_Finder class
+2024-07-08/22:52:44		End of Prediction
+2024-07-08/22:53:44		Start of Prediction
+2024-07-08/22:53:44		Entered the encode_data_prediction method of Preprocessor class
+2024-07-08/22:53:44		Object features are successfully encoded for prediction pipeline
+2024-07-08/22:53:44		Entered is_null_present method of Preprocessor class
+2024-07-08/22:53:44		Finding missing calues is a success. Data written to the null values file. Exited the is_null_present method of Preprocessor class
+2024-07-08/22:53:44		Entered the find_correct_model_file method of the Model_Finder class.
+2024-07-08/22:53:44		Exited the find_correct_model_file method of Model Finder class.
+2024-07-08/22:53:44		Entered the load_model method of the File_Operation class
+2024-07-08/22:53:44		Model FileXGBoostloaded. Exited the load_model method of Model_Finder class
+2024-07-08/22:53:44		End of Prediction

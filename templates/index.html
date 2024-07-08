@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CAC Prediction by Ben Roshan</title>
+    <title>Demand Prediction by Ben Roshan</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -69,7 +69,7 @@
 
 <body>
     <div class="container">
-        <h1>CAC Prediction by Ben Roshan</h1>
+        <h1>Demand Prediction by Ben Roshan</h1>
         <form action="/" method="post">
             <!-- Sales Country -->
             <label for="sales_country">Sales Country:</label>
@@ -209,6 +209,13 @@
             <!-- Submit Button -->
             <button type="submit">Predict</button>
         </form>
+        <!-- Display Prediction Result -->
+        {% if prediction is not none %}
+        <div class="result">
+            <h2>Prediction Result</h2>
+            <p>The predicted demand is: {{ prediction }}</p>
+        </div>
+        {% endif %}
     </div>
 </body>
 
