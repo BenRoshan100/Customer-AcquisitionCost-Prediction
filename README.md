@@ -1,6 +1,7 @@
 # Marketing Campaign Demand Prediction
 
 ![Heroku Deployment](deployment.png)
+![Heroku Deployment](deployment2.png)
 
 ## Project Overview
 
