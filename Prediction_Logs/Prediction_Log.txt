@@ -192,3 +192,13 @@ training data did not have the following fields: target
 2024-07-08/22:53:44		Entered the load_model method of the File_Operation class
 2024-07-08/22:53:44		Model FileXGBoostloaded. Exited the load_model method of Model_Finder class
 2024-07-08/22:53:44		End of Prediction
+2024-07-08/23:00:37		Start of Prediction
+2024-07-08/23:00:37		Entered the encode_data_prediction method of Preprocessor class
+2024-07-08/23:00:37		Object features are successfully encoded for prediction pipeline
+2024-07-08/23:00:37		Entered is_null_present method of Preprocessor class
+2024-07-08/23:00:37		Finding missing calues is a success. Data written to the null values file. Exited the is_null_present method of Preprocessor class
+2024-07-08/23:00:37		Entered the find_correct_model_file method of the Model_Finder class.
+2024-07-08/23:00:37		Exited the find_correct_model_file method of Model Finder class.
+2024-07-08/23:00:37		Entered the load_model method of the File_Operation class
+2024-07-08/23:00:37		Model FileXGBoostloaded. Exited the load_model method of Model_Finder class
+2024-07-08/23:00:37		End of Prediction
