@@ -58,7 +58,7 @@ The raw dataset contains the following features:
 The model is training on the following data points. The model predicts for the given promotion features, what is the expected demand
 1. sales_country: The country where the sales are occurring.
 2. n_products: The number of products.
-3. promotion_name: The name of the promotion being applied.
+3. promotion_name: The name of the promotion being applied. <br>
 Store IDs (boolean values indicating whether the store is selected or not):
 4. store_id_0
 5. store_id_1
@@ -79,8 +79,7 @@ Store IDs (boolean values indicating whether the store is selected or not):
 20. store_id_16
 21. store_id_17
 22. store_id_18
-23. store_id_19
-
+23. store_id_19 <br>
 Promotion types (integer values where 0 or 1 indicates whether the promotion type is selected or not):
 24. Daily_Paper: Indicates if the Daily Paper promotion is selected.
 25. Radio: Indicates if the Radio promotion is selected.
